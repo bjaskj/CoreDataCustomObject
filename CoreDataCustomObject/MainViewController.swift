@@ -24,26 +24,35 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func buttonLoadClicked() {
+        let context = getContext()
+        let request = NSFetchRequest(entityName: "Users")
+        request.returnsObjectsAsFaults = false
+        
+        request.predicate = NSPredicate(format: "username = %@", textUsername.text!)
+        
+        var results = context.executeFetchRequest(request, error: nil)
+        
+        if results.count > 0 {
+            for user: AnyObject in results {
+                var thisUser = user as Users
+                println(thisUser.toString())
+                thisUser.addFunnyPrefix("👍 ")
+                println(thisUser.toString())
+            }
+            return
+        }
+        
+        println("No results found")
+        
     }
     
     @IBAction func buttonSaveClicked() {
-        /*
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-        let context = appDelegate.managedObjectContext
-        let entity = NSEntityDescription.entityForName("Users", inManagedObjectContext: context)
-        
-        var newUser = Users(entity: entity, insertIntoManagedObjectContext: context)
-        newUser.password = textPassword.text!
-        newUser.username = textUsername.text!
-        */
-        
-        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         let context = getContext()
         let entity = getEntity(context)
         
         var newUser = Users(entity: entity, insertIntoManagedObjectContext: context)
-        newUser.password = textPassword.text!
-        newUser.username = textUsername.text!
+        newUser.password = textPassword.text
+        newUser.username = textUsername.text
         
         context.save(nil)
         
