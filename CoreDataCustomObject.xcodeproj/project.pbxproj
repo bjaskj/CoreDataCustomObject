@@ -11,6 +11,9 @@
 		D429279E19608E3F0055FA0A /* CoreDataCustomObject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D429279C19608E3F0055FA0A /* CoreDataCustomObject.xcdatamodeld */; };
 		D42927A019608E3F0055FA0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D429279F19608E3F0055FA0A /* Images.xcassets */; };
 		D42927AC19608E3F0055FA0A /* CoreDataCustomObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42927AB19608E3F0055FA0A /* CoreDataCustomObjectTests.swift */; };
+		D42927B619608E6A0055FA0A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42927B519608E6A0055FA0A /* Storyboard.storyboard */; };
+		D42927B819608EBF0055FA0A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42927B719608EBF0055FA0A /* MainViewController.swift */; };
+		D4911559196090CF008584EF /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4911558196090CF008584EF /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,9 @@
 		D42927A519608E3F0055FA0A /* CoreDataCustomObjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataCustomObjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42927AA19608E3F0055FA0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D42927AB19608E3F0055FA0A /* CoreDataCustomObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataCustomObjectTests.swift; sourceTree = "<group>"; };
+		D42927B519608E6A0055FA0A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		D42927B719608EBF0055FA0A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D4911558196090CF008584EF /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +82,10 @@
 				D429279A19608E3F0055FA0A /* AppDelegate.swift */,
 				D429279F19608E3F0055FA0A /* Images.xcassets */,
 				D429279C19608E3F0055FA0A /* CoreDataCustomObject.xcdatamodeld */,
+				D42927B719608EBF0055FA0A /* MainViewController.swift */,
 				D429279819608E3F0055FA0A /* Supporting Files */,
+				D42927B519608E6A0055FA0A /* Storyboard.storyboard */,
+				D4911558196090CF008584EF /* Users.swift */,
 			);
 			path = CoreDataCustomObject;
 			sourceTree = "<group>";
@@ -186,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D42927A019608E3F0055FA0A /* Images.xcassets in Resources */,
+				D42927B619608E6A0055FA0A /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4911559196090CF008584EF /* Users.swift in Sources */,
+				D42927B819608EBF0055FA0A /* MainViewController.swift in Sources */,
 				D429279E19608E3F0055FA0A /* CoreDataCustomObject.xcdatamodeld in Sources */,
 				D429279B19608E3F0055FA0A /* AppDelegate.swift in Sources */,
 			);
@@ -381,6 +393,7 @@
 				D42927B119608E3F0055FA0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D42927B219608E3F0055FA0A /* Build configuration list for PBXNativeTarget "CoreDataCustomObjectTests" */ = {
 			isa = XCConfigurationList;
@@ -389,6 +402,7 @@
 				D42927B419608E3F0055FA0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
